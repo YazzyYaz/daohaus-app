@@ -413,6 +413,27 @@ export const FORM = {
       ],
     ],
   },
+  MINION_OFFER_ERC721_TOKEN: {
+    id: 'MINION_OFFER_ERC721_TOKEN',
+    title: 'Offer NFT',
+    subtitle: 'Offer NFT as Tribute',
+    description:
+      'Offer an NFT as tribute to the DAO. Optionally, offer or request some funds as well.',
+    type: PROPOSAL_TYPES.MINION_OFFER,
+    tx: null,
+    required: ['title'],
+    fields: [
+      [FIELD.NFT_SELECT],
+      [
+        FIELD.TITLE,
+        FIELD.DESCRIPTION,
+        FIELD.LINK,
+        FIELD.TRIBUTE,
+        FIELD.SHARES_REQUEST,
+        FIELD.LOOT_REQUEST,
+      ],
+    ],
+  },
   MINION_BUYOUT_ERC721_TOKEN: {
     id: 'MINION_BUYOUT_ERC721_TOKEN',
     title: 'Buyout Proposal',
